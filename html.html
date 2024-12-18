@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agency Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header #logo {
+
+            font-size: 2em;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1em;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Mega Menu Styles */
+        .mega-menu {
+            display: none;
+            position: absolute;
+            background-color: #f4f4f4;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .mega-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mega-menu ul li {
+            padding: 5px 0;
+        }
+
+        nav .services:hover .mega-menu {
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            transition: transform 0.3s;
+        }
+
+        .hero h1:hover {
+            transform: scale(1.1);
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .about table, .about th, .about td {
+            border: 1px solid #ccc;
+        }
+
+        .about th, .about td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .about tr:hover {
+            background-image: url("../images/");
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 50px 20px;
+            background-color: #f8f8f8;
+        }
+
+        .services-section .page-menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .services-section .page-menu a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .services-section .page-menu a:hover {
+            background-color: #ddd;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .portfolio .page-menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .portfolio .page-menu a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .portfolio .page-menu a:hover {
+            background-color: #ddd;
+        }
+
+        .portfolio .project {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .portfolio .project:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div id="logo">LOGO</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <div class="services">
+                <a href="#">Services</a>
+                <div class="mega-menu">
+                    <div>
+                        <h3>Category 1</h3>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>SEO Optimization</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Category 2</h3>
+                        <ul>
+                            <li>Content Writing</li>
+                            <li>Social Media Marketing</li>
+                            <li>Branding</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Our Agency</h1>
+        <p>Your success is our mission.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We are a digital agency dedicated to delivering innovative solutions for businesses worldwide.</p>
+        <table>
+            <tr>
+                <th>Years of Experience</th>
+                <th>Projects Completed</th>
+                <th>Happy Clients</th>
+            </tr>
+            <tr>
+                <td>10+</td>
+                <td>500+</td>
+                <td>1000+</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="page-menu">
+            <a href="#">All Services</a>
+            <a href="#">Web Development</a>
+            <a href="#">SEO Optimization</a>
+            <a href="#">UI/UX Design</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Our Work</h2>
+        <div class="page-menu">
+            <a href="#">All Projects</a>
+            <a href="#">Web Design</a>
+            <a href="#">Mobile Apps</a>
+        </div>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Description of Project 3</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Company Name. All rights reserved.</p>
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
